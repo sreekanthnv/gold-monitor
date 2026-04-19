@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+<title>India Gold Rates Today</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--g:#d4af37;--gl:#f0c040;--gd:#a8892a;--bg:#0f0e0a;--c1:#1a1812;--tx:#f5f0e8;--mu:#9a9280;--bd:#2e2a1e;--gr:#3dba5e;--rd:#e0443c;--am:#f0a030}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:var(--bg);color:var(--tx);min-height:100vh}
+header{background:linear-gradient(135deg,#1a1505,#2e2608,#1a1505);border-bottom:2px solid var(--gd);padding:14px 18px;display:flex;align-items:center;justify-content:space-between;gap:8px}
+.logo{display:flex;align-items:center;gap:9px}
+.li{width:38px;height:38px;background:radial-gradient(circle at 40% 35%,#ffe066,#c8960c);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:17px;box-shadow:0 0 12px #d4af3760;flex-shrink:0}
+.lt h1{font-size:1.1rem;color:var(--gl)}
+.lt p{font-size:.6rem;color:var(--mu);letter-spacing:1.5px;text-transform:uppercase;margin-top:2px}
+.hdate{font-size:.72rem;color:var(--g);background:#2a2310;border:1px solid var(--gd);border-radius:6px;padding:4px 10px;white-space:nowrap}
+.sbar{background:#12110c;border-bottom:1px solid var(--bd);padding:7px 18px;display:flex;align-items:center;gap:8px;font-size:.72rem}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--mu);flex-shrink:0}
+.dot.live{background:var(--gr);box-shadow:0 0 5px var(--gr);animation:pulse 2s infinite}
+.dot.err{background:var(--rd)}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+#stext{color:var(--mu);flex:1}
+#sup{color:var(--mu);font-size:.64rem;white-space:nowrap}
+main{padding:16px;max-width:520px;margin:0 auto}
+.spin{display:inline-block;width:13px;height:13px;border:2px solid var(--gd);border-top-color:transparent;border-radius:50%;animation:spin .8s linear infinite;vertical-align:middle;margin-right:5px}
+@keyframes spin{to{transform:rotate(360deg)}}
+.avg{background:linear-gradient(135deg,#2a2100,#382c00);border:1px solid var(--gd);border-radius:12px;padding:16px;margin-bottom:16px}
+.avg-row{display:flex;gap:12px}
+.avg-col{flex:1}
+.alb{font-size:.58rem;text-transform:uppercase;letter-spacing:1.5px;color:var(--gd);margin-bottom:3px}
+.av{font-size:1.75rem;font-weight:800;color:#ffe566;line-height:1;min-height:2.1rem}
+.as{font-size:.63rem;color:var(--mu);margin-top:5px;line-height:1.6}
+.avg-meta{font-size:.62rem;color:var(--mu);margin-top:10px;border-top:1px solid var(--bd);padding-top:8px}
+.sec{font-size:.63rem;text-transform:uppercase;letter-spacing:2px;color:var(--gd);margin-bottom:10px}
+.card{background:var(--c1);border:1px solid var(--bd);border-radius:10px;padding:12px 14px;margin-bottom:8px}
+.ch{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:10px;gap:8px}
+.cn{font-size:.88rem;font-weight:600}
+.cd{font-size:.6rem;color:var(--mu);margin-top:2px}
+.pill{display:inline-block;padding:2px 8px;border-radius:9px;font-size:.6rem;font-weight:700;white-space:nowrap}
+.ok{background:#0e2e1a;color:var(--gr);border:1px solid #1a4a2a}
+.calc{background:#1a1a2e;color:#8888ff;border:1px solid #2a2a60}
+.ep{background:#2e0d0a;color:var(--rd);border:1px solid #4a1a16}
+.g4{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.sp{background:#12110c;border-radius:6px;padding:7px 9px}
+.sl{font-size:.58rem;color:var(--mu);margin-bottom:2px}
+.sv{font-size:.95rem;font-weight:700;color:var(--gl)}
+.sg{font-size:.58rem;color:var(--mu);margin-top:1px}
+.sg span{color:var(--g)}
+.cerr{font-size:.68rem;color:var(--mu);margin-top:2px;line-height:1.5}
+.rfbtn{width:100%;margin:14px 0 10px;background:linear-gradient(135deg,var(--gd),var(--g));color:#1a1200;border:none;border-radius:10px;padding:12px;font-size:.88rem;font-weight:700;cursor:pointer;letter-spacing:.3px}
+.rfbtn:disabled{opacity:.5;cursor:not-allowed}
+.note{background:#16140d;border-left:3px solid var(--gd);border-radius:6px;padding:10px 13px;font-size:.67rem;color:var(--mu);line-height:1.7;margin-bottom:14px}
+.note strong{color:var(--g)}
+footer{text-align:center;padding:14px;font-size:.62rem;color:#4a4538;border-top:1px solid var(--bd)}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">
+    <div class="li">🥇</div>
+    <div class="lt"><h1>India Gold Rates</h1><p>Live · INR · 22K &amp; 24K</p></div>
+  </div>
+  <div class="hdate" id="hdate">—</div>
+</header>
+<div class="sbar">
+  <div class="dot" id="dot"></div>
+  <span id="stext"><span class="spin"></span> Loading…</span>
+  <span id="sup"></span>
+</div>
+<main>
+  <div class="avg">
+    <div class="avg-row">
+      <div class="avg-col">
+        <div class="alb">22 Karat / gram</div>
+        <div class="av" id="a22"><span class="spin"></span></div>
+        <div class="as" id="a22s"></div>
+      </div>
+      <div class="avg-col">
+        <div class="alb">24 Karat / gram</div>
+        <div class="av" id="a24"><span class="spin"></span></div>
+        <div class="as" id="a24s"></div>
+      </div>
+    </div>
+    <div class="avg-meta" id="ameta"></div>
+  </div>
+
+  <div class="sec">Live Quotes</div>
+  <div id="cards"><div class="card" style="color:var(--mu);font-size:.8rem;text-align:center;padding:18px"><span class="spin"></span> Fetching prices…</div></div>
+
+  <button class="rfbtn" id="rfbtn" onclick="load()" disabled>⟳ Refresh Prices</button>
+
+  <div class="note">
+    <strong>Sources:</strong> Malabar Gold and Kalyan Jewellers prices are fetched server-side from their websites.
+    International Spot is always fetched as a reliable cross-check.
+    Prices shown are <em>base metal rates</em> — jewellers add making charges (₹150–₹1,500/g) on top. GST 3% shown separately.
+  </div>
+</main>
+<footer>India Gold Price Monitor · Personal investment reference only</footer>
+
+<script>
+const R  = v => '₹' + Math.round(v).toLocaleString('en-IN');
+const RG = v => '₹' + Math.round(v * 1.03).toLocaleString('en-IN');
+
+function card(r) {
+  if (r.status === 'ok' || r.status === 'calc') {
+    const pc = r.status === 'calc' ? 'calc' : 'ok';
+    const pt = r.status === 'calc' ? '⚡ Calculated' : '✓ Live';
+    return `<div class="card">
+      <div class="ch">
+        <div>
+          <div class="cn">${r.name}</div>
+          <div class="cd">${r.domain}</div>
+          ${r.note ? `<div class="cd" style="margin-top:1px">${r.note}</div>` : ''}
+        </div>
+        <span class="pill ${pc}">${pt}</span>
+      </div>
+      <div class="g4">
+        <div class="sp"><div class="sl">22K / gram</div><div class="sv">${R(r.k22)}</div><div class="sg">+GST → <span>${RG(r.k22)}</span></div></div>
+        <div class="sp"><div class="sl">22K / 10g</div><div class="sv">${R(r.k22*10)}</div><div class="sg">+GST → <span>${RG(r.k22*10)}</span></div></div>
+        <div class="sp"><div class="sl">24K / gram</div><div class="sv">${R(r.k24)}</div><div class="sg">+GST → <span>${RG(r.k24)}</span></div></div>
+        <div class="sp"><div class="sl">24K / 10g</div><div class="sv">${R(r.k24*10)}</div><div class="sg">+GST → <span>${RG(r.k24*10)}</span></div></div>
+      </div>
+    </div>`;
+  }
+  return `<div class="card">
+    <div class="ch">
+      <div><div class="cn">${r.name}</div><div class="cd">${r.domain}</div></div>
+      <span class="pill ep">✗ Failed</span>
+    </div>
+    <div class="cerr">${r.error || 'Could not fetch price'}</div>
+  </div>`;
+}
+
+async function load() {
+  const btn = document.getElementById('rfbtn');
+  btn.disabled = true; btn.textContent = '⟳ Refreshing…';
+  document.getElementById('dot').className = 'dot';
+  document.getElementById('stext').innerHTML = '<span class="spin"></span> Fetching…';
+
+  try {
+    const res  = await fetch('/api/gold');
+    const data = await res.json();
+
+    const live   = data.filter(r => r.status === 'ok');
+    const all_ok = data.filter(r => r.status === 'ok' || r.status === 'calc');
+    const src    = live.length ? live : all_ok;
+
+    const avg22 = src.length ? Math.round(src.reduce((s,r)=>s+r.k22,0)/src.length) : null;
+    const avg24 = src.length ? Math.round(src.reduce((s,r)=>s+r.k24,0)/src.length) : null;
+
+    if (avg22) {
+      document.getElementById('a22').textContent = R(avg22);
+      document.getElementById('a22s').innerHTML  = `per 10g → ${R(avg22*10)}<br>+GST → ${RG(avg22*10)}`;
+      document.getElementById('a24').textContent = R(avg24);
+      document.getElementById('a24s').innerHTML  = `per 10g → ${R(avg24*10)}<br>+GST → ${RG(avg24*10)}`;
+      document.getElementById('ameta').textContent =
+        live.length ? `Average of ${live.length} jeweller quote${live.length>1?'s':''}` : 'Based on international spot + 15% import duty';
+    } else {
+      document.getElementById('a22').textContent = '—';
+      document.getElementById('a24').textContent = '—';
+    }
+
+    document.getElementById('cards').innerHTML = data.map(card).join('');
+
+    const now = new Date();
+    document.getElementById('hdate').textContent =
+      now.toLocaleDateString('en-IN',{day:'numeric',month:'short',year:'numeric'});
+    document.getElementById('sup').textContent =
+      'Updated ' + now.toLocaleTimeString('en-IN',{hour:'2-digit',minute:'2-digit'});
+
+    const ok = all_ok.length;
+    document.getElementById('dot').className = `dot ${ok ? 'live' : 'err'}`;
+    document.getElementById('stext').textContent =
+      ok ? `${ok} source${ok>1?'s':''} loaded` : 'All sources failed';
+
+  } catch(e) {
+    document.getElementById('dot').className = 'dot err';
+    document.getElementById('stext').textContent = 'Failed: ' + e.message;
+    document.getElementById('a22').textContent = '—';
+    document.getElementById('a24').textContent = '—';
+    document.getElementById('cards').innerHTML =
+      `<div class="card"><div class="cerr">Could not reach server: ${e.message}</div></div>`;
+  }
+
+  btn.disabled = false; btn.textContent = '⟳ Refresh Prices';
+}
+
+setInterval(load, 15 * 60 * 1000);
+load();
+</script>
+</body>
+</html>
