@@ -3,7 +3,7 @@
 A lightweight web app that tracks daily gold rates in India from multiple sources,
 with a clean mobile- and web-friendly UI. Deployed on Vercel.
 
-🔗 **Live demo:** [gold-monitor-omega.vercel.app](https://gold-monitor-omega.vercel.app)
+🔗 **Live demo:** [gold-monitor-omega.vercel.app](https://gold-monitor-se4v.vercel.app/)
 
 ## What it does
 
